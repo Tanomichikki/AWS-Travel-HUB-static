@@ -45,6 +45,7 @@ This project demonstrates:
 
 
 **🏗️ Project Architecture**
+```
 Frontend 
      ⬇
 Amazon S3 Bucket
@@ -54,7 +55,7 @@ CloudFront CDN
 (HTTPS + Global Acceleration)
      ⬇
 End Users
-
+```
 
 #### **☁️ AWS Deployment Breakdown**
 
@@ -164,18 +165,27 @@ TravelHub/
 **🧪 Running the Project Locally**
 
 1️. Clone the Repository
+```
 git clone https://github.com/your-username/TravelHub.git
+```
+```
 cd TravelHub
+```
 
 2. Install Dependencies
+```
 npm install
+```
 
 3️. Start Development Server
+```
 npm run dev
+```
 
 4️. Build for Production
+```
 npm run build
-
+```
 
 #### **🚀 Deploying to AWS S3 + CloudFront**
 
@@ -183,10 +193,10 @@ npm run build
 ```ts
 npm run build
 ```
-**Step 2 — Upload /dist to an S3 Bucket
-Step 3 — Enable Static Website Hosting
-Step 4 — Add Public Read Bucket Policy
-Step 5 — Create a CloudFront Distribution**
+**Step 2 — Upload /dist to an S3 Bucket**
+**Step 3 — Enable Static Website Hosting**
+**Step 4 — Add Public Read Bucket Policy**
+**Step 5 — Create a CloudFront Distribution**
 - Origin: S3 website endpoint
 - Viewer Protocol: Redirect HTTP to HTTPS
 - Default Root Object: index.html
